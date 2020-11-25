@@ -28,5 +28,9 @@ app.get('/', function (req, res) {
   res.send('Welcome to IBM Cloud DevOps using containers. Let\'s go use the Continuous Delivery Service');
 });
 
+app.get('/health', function (req, res) {
+  res.send('app/system is healthy !');
+});
+
 app.listen(PORT);
 console.log(' Application Running on port' + PORT);
