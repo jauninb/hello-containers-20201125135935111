@@ -82,10 +82,6 @@ spec:
           serviceName: hello-service-cip
           servicePort: 80
         path: /
-      - backend:
-          serviceName: hello-service-cip
-          servicePort: 80
-        path: /
   tls:
   - hosts:
     - hello-app.cluster-ingress-subdomain
